@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    background-color: #375B56;
+}
+.anim-letters {
+    line-height: 22px;
+    max-width: 270px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.anim-letters__word {
+    overflow: hidden;
+    display: inline-block;
+    line-height: 0;
+}
+
+.anim-letters__letter-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 0;
+}
+
+.anim-letters__letter {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    line-height: 1.15;
+    transform-origin: left;
+}
