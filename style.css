@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
     background-color: #375B56;
+    position: relative;
 }
 .anim-letters {
     line-height: 22px;
@@ -29,4 +30,35 @@ body{
     display: inline-block;
     line-height: 1.15;
     transform-origin: left;
+}
+
+/* DOOR */
+.door{
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+    height: 500px;
+    left: calc(50% - 175px);
+    position: relative;
+    border-radius: 230px 230px 0 0;
+    overflow: hidden;
+}
+.door .inner{
+    transform-origin: bottom;
+}
+.door .left{
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.door .right{
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
