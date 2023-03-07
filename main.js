@@ -19,7 +19,22 @@ wordWrapper.forEach((word) => {
     word.innerHTML = word.textContent.replace(/\S/g, "<span class='anim-letters__letter-wrapper'><span class='anim-letters__letter'>$&</span></span>");
 });
 
-
+// Animate the letters
+setTimeout(function(){
+    anime.timeline({ loop: false })
+    .add({
+        targets: '.anim-letters .anim-letters__letter',
+        translateY: [25, 0],
+        translateZ: 0,
+        rotate: [45, 0],
+        opacity: [0,1],
+        // easing: "linear",
+        easing: "easeOutQuart",
+        duration: 500,
+        delay: (el, i) => 5 * i,
+    })
+}, 1500
+)
 
 anime({
     targets: ['.left', '.right'],
@@ -42,5 +57,5 @@ anime({
         duration: 400,
         easing: 'linear',
         delay: 1500
-    }
+    },
 });
